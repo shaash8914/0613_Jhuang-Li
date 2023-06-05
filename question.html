@@ -16,130 +16,307 @@
       href="./image/favicon.ico"
     />
     <link rel="stylesheet" href="./style_index.css" />
+    <!-- <script type="text/javascript" src="./js/jquery-3.7.0.js"></script> -->
   </head>
   <body>
     <!-- 背景圖 -->
-    <div class="background-pic_question">
-      <!-- 購物車 -->
-      <div class="wrap-shopcart">
-        <img src="./image/shoppcar_icon.svg" alt="shopping-cart" />
-      </div>
-      <!-- 導覽列 -->
-      <header class="wrap-header">
-        <nav class="header-container">
-          <div class="nav-logo">
-            <a class="logo-link" href="./index.html">
-              <img src="./image/title_logo.svg" alt="Rose Quartz_logo" />
-            </a>
-          </div>
-          <div class="list-inner">
-            <ul class="nav-list">
-              <li>
-                <div class="list-hover"></div>
-                <a href="./crystal.html">認識水晶</a>
-              </li>
-              <li>
-                <div class="list-hover"></div>
-                <a href="./method.html">淨化方法</a>
-              </li>
-              <li>
-                <div class="list-hover"></div>
-                <a href="./commodity.html">所有商品</a>
-              </li>
-              <li>
-                <div class="list-hover"></div>
-                <a href="./question.html">常見問題</a>
-              </li>
-            </ul>
-            <div class="nav-btn">
-              <a href="./log-in.html" class="btn_log-in">登 入</a>
-              <a href="./sign-up.html" class="btn_sign-up">註 冊</a>
-            </div>
-          </div>
-        </nav>
-      </header>
-      <!-- 常見問題_主要區塊 -->
-      <main class="wrap-main_question">
-        <!-- banner -->
-        <section class="wrap-banner">
-          <div class="question-banner-container">
-            <div class="text-inner">
-              <div class="text-detail-top">
-                <p>用心體會與感受</p>
-                <i class="fa-solid fa-quote-right" style="color: #ffa3a3"></i>
-              </div>
-              <div class="text-detail-bot">
-                <p>獨一無二的意義</p>
-                <i class="fa-solid fa-quote-left" style="color: #ffa3a3"></i>
-              </div>
-            </div>
-            <div class="search-inner">
-              <input
-                class="search"
-                type="search"
-                placeholder="挑選屬於你自己的水晶！"
-              />
-              <i
-                class="fa-solid fa-magnifying-glass"
-                style="color: #ffa3a3"
-              ></i>
-            </div>
-            <div class="pageTitle-inner">
-              <div class="pagetitle"></div>
-              <div class="pagetitle-inside">
-                <h1>/ 常見問題 /</h1>
-              </div>
-            </div>
-          </div>
-        </section>
-        <!-- 常見問題Q&A -->
-        <section class="wrap-QA">
-          <div class="QA-container">
-            <div class="QA-inner">
-              <div class="QA-content">
-                <div class="QA-classtype">
-                  <h3>Q：如果訂購時遇到問題怎麼辦？</h3>
-                  <i class="fa-solid fa-circle-plus"></i>
-                </div>
-                <div class="QA-classtype">
-                  <h3>Q：水晶飾品可以碰水嗎？</h3>
-                  <i class="fa-solid fa-circle-plus"></i>
-                </div>
-                <div class="QA-classtype">
-                  <h3>Q：水晶真的有能量嗎？是否真的影響人的磁場？</h3>
-                  <i class="fa-solid fa-circle-plus"></i>
-                </div>
-                <div class="QA-classtype">
-                  <h3>Q：可以混戴不同水晶的飾品嗎？</h3>
-                  <i class="fa-solid fa-circle-plus"></i>
-                </div>
-                <div class="QA-classtype">
-                  <h3>Q：請問水晶手鍊要戴哪一手？</h3>
-                  <i class="fa-solid fa-circle-plus"></i>
-                </div>
-                <div class="QA-classtype">
-                  <h3>Q：水晶手鏈可以更改至合適的手圍尺寸嗎？</h3>
-                  <i class="fa-solid fa-circle-plus"></i>
-                </div>
-                <div class="QA-classtype-end">
-                  <h3>Q：如何量度自己的手圍/戒指圈口呢？</h3>
-                  <i class="fa-solid fa-circle-plus"></i>
-                </div>
-              </div>
-              <div class="QA-btn">
-                <p>Viwe<br />More</p>
-              </div>
-            </div>
-          </div>
-        </section>
-      </main>
-      <!-- 頁尾 -->
-      <footer class="wrap-footer">
-        <!-- 尾頁top -->
-        <div class="page-scroll-inner">
-          <span class="page-scroll" onclick="scrollToTop()">Top</span>
+    <div class="background-pic_index"></div>
+    <!-- 購物車 -->
+    <div class="wrap-shopcart">
+      <img src="./image/shoppcar_icon.svg" alt="shopping-cart" />
+    </div>
+    <!-- 導覽列 -->
+    <header class="wrap-header">
+      <nav class="header-container">
+        <div class="nav-logo">
+          <a class="logo-link" href="./index.html">
+            <img src="./image/title_logo.svg" alt="Rose Quartz_logo" />
+          </a>
         </div>
-        <!-- 尾頁內容 -->
+        <div class="list-inner">
+          <ul class="nav-list">
+            <li>
+              <div class="list-hover"></div>
+              <a href="./crystal.html">認識水晶</a>
+            </li>
+            <li>
+              <div class="list-hover"></div>
+              <a href="./method.html">淨化方法</a>
+            </li>
+            <li>
+              <div class="list-hover"></div>
+              <a href="./commodity.html">所有商品</a>
+            </li>
+            <li>
+              <div class="list-hover"></div>
+              <a href="./question.html">常見問題</a>
+            </li>
+          </ul>
+          <div class="nav-btn">
+            <a href="./log-in.html" class="btn_log-in">登 入</a>
+            <a href="./sign-up.html" class="btn_sign-up">註 冊</a>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <!-- 常見問題_主要區塊 -->
+    <main class="wrap-main_question">
+      <!-- banner -->
+      <section class="wrap-banner">
+        <div class="question-banner-container">
+          <div class="text-inner">
+            <div class="text-detail-top">
+              <p>用心體會與感受</p>
+              <i class="fa-solid fa-quote-right" style="color: #ffa3a3"></i>
+            </div>
+            <div class="text-detail-bot">
+              <p>獨一無二的意義</p>
+              <i class="fa-solid fa-quote-left" style="color: #ffa3a3"></i>
+            </div>
+          </div>
+          <div class="search-inner">
+            <input
+              class="search"
+              type="search"
+              placeholder="挑選屬於你自己的水晶！"
+            />
+            <i class="fa-solid fa-magnifying-glass" style="color: #ffa3a3"></i>
+          </div>
+          <div class="pageTitle-inner">
+            <div class="pagetitle"></div>
+            <div class="pagetitle-inside">
+              <h1>/ 常見問題 /</h1>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- 常見問題Q&A -->
+      <section class="wrap-QA">
+        <div class="QA-container">
+          <div class="QA-inner">
+            <div class="QA-content">
+              <!-- 問題區 -->
+              <div class="QA-classtype">
+                <div class="QA-qus">
+                  <h3>Q：水晶真的有功效嗎？</h3>
+                  <!-- ++按鈕 -->
+                  <div class="btn_ plus" id="slideButton">
+                    <label class="container">
+                      <input type="checkbox" checked="checked" />
+                      <div class="line"></div>
+                      <div class="line line-indicator"></div>
+                    </label>
+                  </div>
+                </div>
+                <div class="QA_ans" id="ans">
+                  <p class="ans">
+                    以下是廣大水晶愛好者的兩大派系，假設你對於水晶功效仍有存疑，<br />
+                    可以參考大家的體驗來選擇如何應用水晶！<br />
+                    <br />
+                    <span>✦ 水晶麻瓜外貌派：</span><br />
+                    <br />
+                    -「好看就戴」<br />
+                    -「戴起來漂亮，心情就美麗~」<br />
+                    <br />
+                    這個派系認為水晶飾品只要自己喜歡，自然戴起來就能療癒生活，<br />
+                    其中有不少網友也認為，在選擇好不好看之間，也會考慮功效，畢竟要改善問題，<br />
+                    首先要先相信問題可以被解決，所以，吸引力法則也可以用在水晶上！<br />
+                    <br />
+                    <span>✦ 體質敏感外貌派：</span><br />
+                    <br />
+                    -「一戴水晶就會暈」<br />
+                    -「曾經戴到手麻QQ」<br />
+                    <br />
+                    其實很多朋友都有被水晶影響的經驗！<br />
+                    由於水晶能量場強大，體質較敏感的人只要一戴上，就容易感到頭暈，<br />
+                    而越純淨、品質越好的水晶反應更強烈！<br />
+                    例如網友非常好評的黑曜石，大家都說戴了之後變得很好睡呢！
+                  </p>
+                </div>
+              </div>
+              <div class="QA-classtype">
+                <div class="QA-qus">
+                  <h3>Q：水晶飾品可以碰水嗎？</h3>
+                  <!-- ++按鈕 -->
+                  <div class="btn_ plus">
+                    <label class="container">
+                      <input type="checkbox" checked="checked" />
+                      <div class="line"></div>
+                      <div class="line line-indicator"></div>
+                    </label>
+                  </div>
+                </div>
+                <div class="QA_ans">
+                  <p class="ans">
+                    還記得在淨化方法提到的流水法嗎？<br />
+                    <br />
+                    沒錯！水晶是<span id="detail">可以碰水</span
+                    >的，沖洗水晶是一種很好的淨化方式！<br />
+                    但是除了淨化水晶之外，其餘情況都不建議碰水，不過這並不代表水晶不可碰水~<br />
+                    而是水晶喜歡天然的物質，過多外在刺激對水晶的能量場都會有負面影響！<br />
+                    <br />
+                    <span>✦ Notice：</span><br />
+                    <br />
+                    1.<span id="detail">禁止戴著洗澡</span
+                    >：化學洗劑會破壞水晶的天然氣場。<br />
+                    2.<span id="detail">禁止沖熱水</span
+                    >：熱水會使水晶變質。<br />
+                    3.保持乾燥：多餘水氣會使水晶飾品金屬部位氧化。
+                  </p>
+                </div>
+              </div>
+              <div class="QA-classtype">
+                <div class="QA-qus">
+                  <h3>Q：可以混戴不同水晶的飾品嗎？</h3>
+                  <!-- ++按鈕 -->
+                  <div class="btn_ plus">
+                    <label class="container">
+                      <input type="checkbox" checked="checked" />
+                      <div class="line"></div>
+                      <div class="line line-indicator"></div>
+                    </label>
+                  </div>
+                </div>
+                <div class="QA_ans">
+                  <p class="ans">
+                    這題可以說是每個人都會有的疑問~<br />
+                    「我手上戴了粉晶，還可以戴黃水晶嗎？」<br />
+                    <br />
+                    答案是可以！
+                    <br />
+                    基本上只要沒有感到不舒服，要混搭水晶是沒問題的，<br />
+                    只不過可能要注意水晶<span id="detail">功效抵銷</span
+                    >的情形。<br />
+                    <br />
+                    <span>✦ Notice：</span><br />
+                    <br />
+                    建議依照個人需求將混搭水晶以比例佩戴，按照當下的情況混搭水晶，<br />
+                    可以讓生活更接近自己想要的樣子！
+                  </p>
+                </div>
+              </div>
+              <div class="QA-classtype">
+                <div class="QA-qus">
+                  <h3>Q：請問水晶手鍊要戴哪一手？</h3>
+                  <!-- ++按鈕 -->
+                  <div class="btn_ plus">
+                    <label class="container">
+                      <input type="checkbox" checked="checked" />
+                      <div class="line"></div>
+                      <div class="line line-indicator"></div>
+                    </label>
+                  </div>
+                </div>
+                <div class="QA_ans">
+                  <p class="ans">
+                    除了黑色／茶色等，主要功效用於辟邪、去病氣、擋小人的水晶應配戴於右手外，<br />
+                    一般的水晶都應戴於<span id="detail">左手</span
+                    >以發揮它最大的效果！<br />
+                    （PS：有些水晶配戴在左和右也適合）<br />
+                    <br />
+                    <span>✦ Notice：</span><br />
+                    <br />
+                    根據能量學「左入右出」既原理：<br />
+                    將水晶放在左邊能將能量吸收，放在右邊能將負能量從身上帶走。<br />
+                  </p>
+                </div>
+              </div>
+              <div class="QA-classtype">
+                <div class="QA-qus">
+                  <h3>Q：水晶是否可以與手錶一起戴呢？</h3>
+                  <!-- ++按鈕 -->
+                  <div class="btn_ plus">
+                    <label class="container">
+                      <input type="checkbox" checked="checked" />
+                      <div class="line"></div>
+                      <div class="line line-indicator"></div>
+                    </label>
+                  </div>
+                </div>
+                <div class="QA_ans">
+                  <p class="ans">
+                    可以的！<br />
+                    <br />
+                    有些人會告訴你「水晶別跟手錶一起戴」，我不是說這是錯的，但是我覺得不用這麼硬性規定。<br />
+                    原因是一般手錶其實不太會影響水晶的磁場。<br />
+                    <br />
+                    <span>✦ Notice：</span><br />
+                    <br />
+                    如果您的手錶是「<span id="detail">鈦鍺鍊</span
+                    >」製作的，那可能就比較會有磁場混亂的問題。<br />
+                    一般的手錶基本上是OK 的。<br />
+                  </p>
+                </div>
+              </div>
+              <div class="QA-classtype">
+                <div class="QA-qus">
+                  <h3>Q：水晶可以戴著睡覺嗎？</h3>
+                  <!-- ++按鈕 -->
+                  <div class="btn_ plus">
+                    <label class="container">
+                      <input type="checkbox" checked="checked" />
+                      <div class="line"></div>
+                      <div class="line line-indicator"></div>
+                    </label>
+                  </div>
+                </div>
+                <div class="QA_ans">
+                  <p class="ans">
+                    其實這個問題並沒有標準答案，而是需要依照水晶的特質及個人體質來回答。<br />
+                    <br />
+                    每個人對於水晶的能量反應都不一樣，需要花時間去磨合。<br />
+                    有些人睡覺時照常佩戴，也不影響睡眠情況，<br />
+                    但有一些人佩戴手鏈，卻導致躺在床上格外清醒，不易入睡。<br />
+                    <br />
+                    <span>✦ Notice：</span><br />
+                    <br />
+                    會建議睡覺前先把水晶取下，也讓水晶「休息」，<br />
+                    可以放在消磁石上讓他回歸自然力量。<br />
+                  </p>
+                </div>
+              </div>
+              <div class="QA-classtype-end">
+                <div class="QA-qus">
+                  <h3>Q：如何量度自己的手圍呢？</h3>
+                  <!-- ++按鈕 -->
+                  <div class="btn_ plus">
+                    <label class="container">
+                      <input type="checkbox" checked="checked" />
+                      <div class="line"></div>
+                      <div class="line line-indicator"></div>
+                    </label>
+                  </div>
+                </div>
+                <div class="QA_ans">
+                  <p class="ans">
+                    如果身邊有軟尺，可以用軟尺圍繞「手腕最瘦」的地方一圈，<br />
+                    得到的長度就是手圍，剛好適合就可，軟尺不用拉到最緊。<br />
+                    <br />
+                    <span>✦ Notice：</span><br />
+                    <br />
+                    沒有軟尺可參考以下：<br />
+                    1.準備一條沒有彈性的線或長條紙<br />
+                    2.繞手環最細的地方一圈，並在交界處留下記號<br />
+                    3.最後拿長尺測量記號處的長度，得到的數字就是你的手圍尺寸囉！
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="QA-btn">
+              <p>Viwe<br />More</p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <!-- 頁尾 -->
+    <footer class="wrap-footer">
+      <!-- 尾頁top -->
+      <div class="page-scroll-inner">
+        <span class="page-scroll" onclick="scrollToTop()">Top</span>
+      </div>
+      <!-- 尾頁內容 -->
+      <div class="footer-body">
         <div class="footer-img">
           <a href="./index.html">
             <img src="./image/page_icon.svg" alt="RoseQuartz_logo"
@@ -148,16 +325,40 @@
         <div class="footer-pages">
           <div class="pages-inner">
             <div class="pages-text">
-              <a href="./crystal.html">認識水晶</a>
+              <a href="./crystal.html" class="inner">
+                <i
+                  class="fa-sharp fa-solid fa-diamond"
+                  style="color: #6c6c6c"
+                ></i>
+                <p>認識水晶</p>
+              </a>
             </div>
             <div class="pages-text">
-              <a href="./method.html">淨化方法</a>
+              <a href="./method.html" class="inner">
+                <i
+                  class="fa-sharp fa-solid fa-diamond"
+                  style="color: #ffd7d7"
+                ></i>
+                <p>淨化方法</p>
+              </a>
             </div>
             <div class="pages-text">
-              <a href="./commodity.html">所有商品</a>
+              <a href="./commodity.html" class="inner">
+                <i
+                  class="fa-sharp fa-solid fa-diamond"
+                  style="color: #6c6c6c"
+                ></i>
+                <p>所有商品</p>
+              </a>
             </div>
             <div class="pages-text-sm">
-              <a href="./question.html">常見問題</a>
+              <a href="./question.html" class="inner">
+                <i
+                  class="fa-sharp fa-solid fa-diamond"
+                  style="color: #ffd7d7"
+                ></i>
+                <p>常見問題</p>
+              </a>
             </div>
           </div>
         </div>
@@ -169,12 +370,12 @@
             </p>
           </div>
         </div>
-      </footer>
-    </div>
+      </div>
+    </footer>
   </body>
   <script
     src="https://kit.fontawesome.com/5c9cec6bc6.js"
     crossorigin="anonymous"
   ></script>
-  <script type="text/javascript" src="./index.js"></script>
+  <script src="./index.js"></script>
 </html>

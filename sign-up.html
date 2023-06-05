@@ -19,141 +19,152 @@
   </head>
   <body>
     <!-- 背景圖 -->
-    <div class="background-pic_sign-up">
-      <!-- 購物車 -->
-      <div class="wrap-shopcart">
-        <img src="./image/shoppcar_icon.svg" alt="shopping-cart" />
-      </div>
-      <!-- 導覽列 -->
-      <header class="wrap-header">
-        <nav class="header-container">
-          <div class="nav-logo">
-            <a class="logo-link" href="./index.html">
-              <img src="./image/title_logo.svg" alt="Rose Quartz_logo" />
-            </a>
+    <div class="background-pic_index"></div>
+    <!-- 購物車 -->
+    <div class="wrap-shopcart">
+      <img src="./image/shoppcar_icon.svg" alt="shopping-cart" />
+    </div>
+    <!-- 導覽列 -->
+    <header class="wrap-header-log">
+      <nav class="header-container">
+        <div class="nav-logo">
+          <a class="logo-link" href="./index.html">
+            <img src="./image/title_logo.svg" alt="Rose Quartz_logo" />
+          </a>
+        </div>
+        <div class="list-inner">
+          <ul class="nav-list">
+            <li>
+              <div class="list-hover"></div>
+              <a href="./crystal.html">認識水晶</a>
+            </li>
+            <li>
+              <div class="list-hover"></div>
+              <a href="./method.html">淨化方法</a>
+            </li>
+            <li>
+              <div class="list-hover"></div>
+              <a href="./commodity.html">所有商品</a>
+            </li>
+            <li>
+              <div class="list-hover"></div>
+              <a href="./question.html">常見問題</a>
+            </li>
+          </ul>
+          <div class="nav-btn">
+            <a href="./log-in.html" class="btn_log-in">登 入</a>
+            <a href="./sign-up.html" class="btn_sign-up">註 冊</a>
           </div>
-          <div class="list-inner">
-            <ul class="nav-list">
-              <li>
-                <div class="list-hover"></div>
-                <a href="./crystal.html">認識水晶</a>
-              </li>
-              <li>
-                <div class="list-hover"></div>
-                <a href="./method.html">淨化方法</a>
-              </li>
-              <li>
-                <div class="list-hover"></div>
-                <a href="./commodity.html">所有商品</a>
-              </li>
-              <li>
-                <div class="list-hover"></div>
-                <a href="./question.html">常見問題</a>
-              </li>
-            </ul>
-            <div class="nav-btn">
-              <a href="./log-in.html" class="btn_log-in">登 入</a>
-              <a href="./sign-up.html" class="btn_sign-up">註 冊</a>
+        </div>
+      </nav>
+    </header>
+    <!-- 註冊_主要區塊 -->
+    <main class="wrap-main_log-in">
+      <!-- 註冊頁面 -->
+      <section class="wrap_log-in">
+        <div class="log-in_container">
+          <div class="log-in_inner">
+            <div class="log-in_title">
+              <h2>註冊帳戶</h2>
             </div>
-          </div>
-        </nav>
-      </header>
-      <!-- 註冊_主要區塊 -->
-      <main class="wrap-main_log-in">
-        <!-- 註冊頁面 -->
-        <section class="wrap_log-in">
-          <div class="log-in_container">
-            <div class="log-in_inner">
-              <div class="log-in_title">
-                <h2>註冊帳戶</h2>
-              </div>
-              <!-- 註冊表單 -->
-              <div class="log-in_body">
-                <form action="" method="post" name="log-in">
-                  <div class="email-inner">
-                    <div class="email">
-                      <label for="email">信箱：</label>
-                      <input
-                        type="text"
-                        name="user_email"
-                        id="email"
-                        placeholder="請輸入Email"
-                      />
-                    </div>
+            <!-- 註冊表單 -->
+            <div class="log-in_body">
+              <form action="" method="post" name="log-in">
+                <div class="email-inner">
+                  <div class="email">
+                    <label for="email">信箱：</label>
+                    <input
+                      type="text"
+                      name="user_email"
+                      id="email"
+                      placeholder="請輸入電子信箱"
+                    />
                   </div>
-                  <div class="account-inner">
-                    <div class="account">
-                      <label for="account">用戶帳號：</label>
-                      <input
-                        type="text"
-                        name="user_account"
-                        id="account"
-                        placeholder="請輸入6至12位用戶帳號英數混和"
-                      />
-                    </div>
+                </div>
+                <div class="account-inner">
+                  <div class="account">
+                    <label for="account">用戶帳號：</label>
+                    <input
+                      type="text"
+                      name="user_account"
+                      id="account"
+                      minlength="6"
+                      maxlength="12"
+                      placeholder="請輸入6至12位用戶帳號英數混和"
+                    />
                   </div>
-                  <div class="password-inner">
-                    <div class="password">
-                      <label for="password">密碼：</label>
-                      <input
-                        type="password"
-                        name="user_password"
-                        id="password"
-                        placeholder="請輸入6至12位密碼英數混和"
-                      />
-                    </div>
+                </div>
+                <div class="password-inner">
+                  <div class="password">
+                    <label for="password">密碼：</label>
+                    <input
+                      type="password"
+                      name="user_password"
+                      id="password"
+                      minlength="6"
+                      maxlength="12"
+                      placeholder="請輸入6至12位密碼英數混和"
+                    />
                   </div>
-                  <div class="password-inner">
-                    <div class="password">
-                      <label for="password">確認密碼：</label>
-                      <input
-                        type="password"
-                        name="user_password"
-                        id="password"
-                        placeholder="請輸入6至12位密碼英數混和"
-                      />
-                    </div>
+                </div>
+                <div class="password-inner">
+                  <div class="password">
+                    <label for="password_confirm">確認密碼：</label>
+                    <input
+                      type="password"
+                      name="user_password"
+                      id="password_confirm"
+                      minlength="6"
+                      maxlength="12"
+                      placeholder="請輸入6至12位密碼英數混和"
+                    />
                   </div>
-                  <div class="gender">
-                    <div class="male">
-                      <input type="radio" name="gender" value="男" id="boy" />
-                      <label for="boy">男</label>
-                    </div>
-                    <div class="female">
-                      <input type="radio" name="gender" value="女" id="girl" />
-                      <label for="girl">女</label>
-                    </div>
+                </div>
+                <div class="gender">
+                  <div class="male">
+                    <input type="radio" name="gender" value="男" id="boy" />
+                    <label for="boy">男</label>
                   </div>
-                  <div class="sign-up_detail">
-                    <input type="checkbox" name="detail" id="detail" />
-                    <label for="detail"
+                  <div class="female">
+                    <input type="radio" name="gender" value="女" id="girl" />
+                    <label for="girl">女</label>
+                  </div>
+                </div>
+                <div class="sign-up_detail">
+                  <div class="detail">
+                    <input type="checkbox" name="detail" id="cb-detail" />
+                    <label for="cb-detail"
                       >我願意接收 Rose Quartz
-                      的最新消息、優惠及服務推廣相關資訊</label
+                      的最新消息、優惠及服務推廣相關資訊。</label
                     >
                   </div>
-                  <div class="sign-up_detail">
+                </div>
+                <div class="sign-up_detail">
+                  <div class="detail">
                     <input type="checkbox" name="detail" id="private" />
                     <label for="private"
                       >我同意網站 <span>服務條款</span> 及
-                      <span>隱私權政策</span></label
+                      <span>隱私權政策</span>。</label
                     >
                   </div>
-                  <div class="log-in_btn">
-                    <button type="submit">註 冊</button>
-                  </div>
-                </form>
-              </div>
+                </div>
+                <div class="log-in_btn">
+                  <button type="submit">註 冊</button>
+                </div>
+              </form>
             </div>
           </div>
-        </section>
-      </main>
-      <!-- 頁尾 -->
-      <footer class="wrap-footer">
-        <!-- 尾頁top -->
-        <div class="page-scroll-inner">
-          <span class="page-scroll" onclick="scrollToTop()">Top</span>
         </div>
-        <!-- 尾頁內容 -->
+      </section>
+    </main>
+    <!-- 頁尾 -->
+    <footer class="wrap-footer">
+      <!-- 尾頁top -->
+      <div class="page-scroll-inner">
+        <span class="page-scroll" onclick="scrollToTop()">Top</span>
+      </div>
+      <!-- 尾頁內容 -->
+      <div class="footer-body">
         <div class="footer-img">
           <a href="./index.html">
             <img src="./image/page_icon.svg" alt="RoseQuartz_logo"
@@ -162,16 +173,40 @@
         <div class="footer-pages">
           <div class="pages-inner">
             <div class="pages-text">
-              <a href="./crystal.html">認識水晶</a>
+              <a href="./crystal.html" class="inner">
+                <i
+                  class="fa-sharp fa-solid fa-diamond"
+                  style="color: #6c6c6c"
+                ></i>
+                <p>認識水晶</p>
+              </a>
             </div>
             <div class="pages-text">
-              <a href="./method.html">淨化方法</a>
+              <a href="./method.html" class="inner">
+                <i
+                  class="fa-sharp fa-solid fa-diamond"
+                  style="color: #ffd7d7"
+                ></i>
+                <p>淨化方法</p>
+              </a>
             </div>
             <div class="pages-text">
-              <a href="./commodity.html">所有商品</a>
+              <a href="./commodity.html" class="inner">
+                <i
+                  class="fa-sharp fa-solid fa-diamond"
+                  style="color: #6c6c6c"
+                ></i>
+                <p>所有商品</p>
+              </a>
             </div>
             <div class="pages-text-sm">
-              <a href="./question.html">常見問題</a>
+              <a href="./question.html" class="inner">
+                <i
+                  class="fa-sharp fa-solid fa-diamond"
+                  style="color: #ffd7d7"
+                ></i>
+                <p>常見問題</p>
+              </a>
             </div>
           </div>
         </div>
@@ -183,8 +218,8 @@
             </p>
           </div>
         </div>
-      </footer>
-    </div>
+      </div>
+    </footer>
   </body>
   <script
     src="https://kit.fontawesome.com/5c9cec6bc6.js"
