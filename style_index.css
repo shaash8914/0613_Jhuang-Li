@@ -56,6 +56,7 @@ img {
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
+  filter: blur(0.5px);
 }
 
 /* 購物車 */
@@ -88,7 +89,6 @@ img {
 .wrap-shopcart:hover {
   background-color: #111111;
   cursor: pointer;
-  color: #000000;
 }
 
 .wrap-shopcart:hover.wrap-shopcart img {
@@ -124,7 +124,6 @@ img {
   .wrap-shopcart:hover {
     background-color: #111111;
     cursor: pointer;
-    color: #000000;
   }
 
   .wrap-shopcart:hover.wrap-shopcart img {
@@ -181,6 +180,16 @@ img {
 }
 
 @media screen and (max-width: 1024px) {
+  .nav-logo {
+    width: 250px;
+  }
+
+  .list-inner {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 1200px) {
   .nav-logo {
     width: 200px;
   }
@@ -283,6 +292,82 @@ img {
   background-color: #ff1111;
   color: #ffffff;
   box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.3);
+}
+
+/* 手機板漢堡 */
+
+.burger-inner {
+  display: none;
+}
+
+@media screen and (max-width: 1200px) {
+  .burger-inner {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 20px;
+  }
+
+  .burger {
+    position: relative;
+    width: 30px;
+    height: 20px;
+    background: transparent;
+    cursor: pointer;
+    display: block;
+  }
+
+  .burger input {
+    display: none;
+  }
+
+  .burger span {
+    display: block;
+    position: absolute;
+    height: 2px;
+    width: 100%;
+    background: #3b3b3b;
+    border-radius: 9px;
+    opacity: 1;
+    left: 0;
+    transform: rotate(0deg);
+    transition: 0.5s ease-in-out;
+  }
+
+  .burger span:nth-of-type(1) {
+    top: 0px;
+    transform-origin: left center;
+  }
+
+  .burger span:nth-of-type(2) {
+    top: 50%;
+    transform: translateY(-50%);
+    transform-origin: left center;
+  }
+
+  .burger span:nth-of-type(3) {
+    top: 100%;
+    transform-origin: left center;
+    transform: translateY(-100%);
+  }
+
+  .burger input:checked ~ span:nth-of-type(1) {
+    transform: rotate(45deg);
+    top: 0px;
+    left: 5px;
+  }
+
+  .burger input:checked ~ span:nth-of-type(2) {
+    width: 0%;
+    opacity: 0;
+    top: 28px;
+  }
+
+  .burger input:checked ~ span:nth-of-type(3) {
+    transform: rotate(-45deg);
+    top: 21px;
+    left: 5px;
+  }
 }
 
 /* 所有banner區域 */
@@ -1344,7 +1429,7 @@ img {
 
 @media screen and (max-width: 768px) {
   .pagenumber-inner {
-    width: 90%;
+    width: 84%;
   }
 }
 
@@ -1650,6 +1735,11 @@ img {
 
 /* 首頁banner細節 */
 
+.text-detail {
+  display: flex;
+  flex-wrap: wrap;
+}
+
 .text-detail-top p {
   padding: 20px 8px;
   color: #2d2d2d;
@@ -1875,6 +1965,12 @@ img {
   transition: all 0.5s ease-in-out;
 }
 
+@media screen and (max-width: 768px) {
+  .article-img {
+    border: 3.5px solid #ffd7d7;
+  }
+}
+
 @media screen and (max-width: 1024px) {
   .article-inner {
     flex-direction: column;
@@ -1970,6 +2066,10 @@ img {
   transition: all 0.35s ease-in-out;
 }
 
+.text-arrow:hover .oval-hover {
+  animation: none;
+}
+
 .oval-hover {
   width: 75px;
   height: 25px;
@@ -1980,6 +2080,11 @@ img {
   left: 10px;
   z-index: 2;
   transition: all 0.35s ease-in-out;
+  animation: 1s ease-in-out 0s infinite alternate lineSlide;
+}
+
+.oval-hover:hover {
+  animation: none;
 }
 
 .oval-hover::after {
@@ -1992,6 +2097,15 @@ img {
   transform: rotate(90deg);
 }
 
+@keyframes lineSlide {
+  from {
+    left: 10%;
+  }
+  to {
+    left: 30%;
+  }
+}
+
 .oval-hover::before {
   content: "";
   position: absolute;
@@ -2001,6 +2115,15 @@ img {
   border-left: 1.5px solid #111111;
   transform: rotate(-45deg);
 }
+
+/* @keyframes lineSlide-sm {
+  from {
+    left: 123%;
+  }
+  to {
+    left: 143%;
+  }
+} */
 
 .text-arrow:hover h3 {
   transform: translateX(-10%);
@@ -2043,6 +2166,12 @@ img {
   overflow: hidden;
   border: 5px solid #ffd7d7;
   transition: all 0.5s ease-in-out;
+}
+
+@media screen and (max-width: 768px) {
+  .method-article-img {
+    border: 3.5px solid #ffd7d7;
+  }
 }
 
 @media screen and (max-width: 1024px) {
@@ -3140,7 +3269,8 @@ img {
 
 .detail-inner p {
   text-align: center;
-  font-size: 0.4rem;
+  font-size: 0.6rem;
+  color: #9b9b9b;
 }
 
 @media screen and (max-width: 768px) {
