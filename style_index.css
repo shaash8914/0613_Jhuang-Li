@@ -645,6 +645,7 @@ img {
   z-index: 2;
   padding-top: 80px;
   padding-bottom: 80px;
+  background-color: #ffffff;
 }
 
 .crystalcard-content h2 {
@@ -746,6 +747,7 @@ img {
   padding: 50px 130px;
   border: 1px solid #111111;
   border-radius: 20px;
+  background-color: #ffffff;
 }
 
 .incense-content h3 {
@@ -840,6 +842,7 @@ img {
   border-radius: 30px;
   margin-top: 200px;
   margin-left: 200px;
+  background-color: #ffffff;
 }
 
 .sunshine-content h3 {
@@ -915,6 +918,7 @@ img {
   border-radius: 30px;
   margin-top: 200px;
   margin-right: 200px;
+  background-color: #ffffff;
 }
 
 .sea​​salt-content h3 {
@@ -950,6 +954,7 @@ img {
   border-radius: 30px;
   margin-top: 200px;
   margin-left: 200px;
+  background-color: #ffffff;
 }
 
 .water-content h3 {
@@ -1786,9 +1791,10 @@ img {
   left: 146px;
 }
 
-/* @media screen and (max-width: 768px) {
+@media screen and (max-width: 768px) {
   .text-detail-top p {
-    display: block;
+    display: none;
+    /* display: block;
     padding-right: 8px;
     padding-top: 10px;
     padding-bottom: 10px;
@@ -1798,11 +1804,12 @@ img {
     border-radius: 10px;
     font-size: 10px;
     letter-spacing: 0.6rem;
-    color: #5a5252;
+    color: #5a5252; */
   }
 
   .text-detail-bot p {
-    display: block;
+    display: none;
+    /* display: block;
     color: #5a5252;
     padding-right: 8px;
     padding-top: 10px;
@@ -1814,7 +1821,7 @@ img {
     border-radius: 10px;
     font-size: 10px;
     letter-spacing: 0.6rem;
-    margin-bottom: 60%;
+    margin-bottom: 60%; */
   }
 
   .text-detail-bot i {
@@ -1824,7 +1831,7 @@ img {
   .text-detail-top i {
     display: none;
   }
-} */
+}
 
 .search-inner {
   position: absolute;
@@ -2030,6 +2037,12 @@ img {
   background-color: #ffd7d7;
   border-radius: 2px;
   z-index: -1;
+}
+
+@media screen and (max-width: 1200px) {
+  .article-text h2::after {
+    display: none;
+  }
 }
 
 .article-text p {
@@ -2248,7 +2261,7 @@ img {
   z-index: -1;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1200px) {
   .method-article-text h2::after {
     display: none;
   }
