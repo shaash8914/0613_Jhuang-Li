@@ -567,7 +567,7 @@ img {
   display: flex;
   align-items: center;
   justify-content: center;
-  padding-top: 40px;
+  padding-top: 50px;
 }
 
 .pb-wrap-crystal {
@@ -586,17 +586,19 @@ img {
 }
 
 .crystal-container {
-  width: 1920px;
+  width: 100%;
   max-width: 1200px;
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   justify-content: space-evenly;
 }
 
 .pb-crystal-container {
-  width: 1920px;
+  width: 100%;
   max-width: 1200px;
   display: flex;
+  flex-wrap: wrap;
   flex-direction: row-reverse;
   align-items: center;
   justify-content: space-evenly;
@@ -614,12 +616,23 @@ img {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  margin-top: 170px;
+  padding-top: 170px;
+}
+
+@media screen and (max-width: 1200px) {
+  .pink-crystalcard-inner {
+    width: 500px;
+    padding-top: 20px;
+  }
+  .yellow-crystalcard-inner {
+    width: 500px;
+    padding-top: 20px;
+  }
 }
 
 .crystalcard-img {
   position: relative;
-  bottom: -50px;
+  bottom: -30px;
   background-color: #ffffff;
   z-index: 5;
   border-radius: 50%;
@@ -648,20 +661,29 @@ img {
   background-color: #ffffff;
 }
 
+@media screen and (max-width: 768px) {
+  .crystalcard-content {
+    width: 90%;
+    border-radius: 60px;
+  }
+}
+
 .crystalcard-content h2 {
   text-align: center;
   font-weight: 400;
   letter-spacing: 5px;
-  margin-bottom: 30px;
+  margin-bottom: 15px;
   font-size: 24px;
   position: relative;
   margin-top: 10px;
 }
 
 .text-question {
-  text-align: center;
+  text-align: left;
   margin-bottom: 30px;
   font-size: 16px;
+  border-bottom: 2px solid #ff8383;
+  border-radius: 1px;
 }
 
 .text-effect {
@@ -676,6 +698,7 @@ img {
   text-align: center;
   font-size: 14px;
   color: #565656;
+  padding-bottom: 15px;
 }
 
 /* 淨化方法banner */
@@ -2007,6 +2030,22 @@ img {
   justify-content: space-between;
 }
 
+@media screen and (max-width: 1200px) {
+  .article-text span {
+    display: inline-block;
+    position: relative;
+  }
+  .article-text span::before {
+    /* border-bottom: 2px #ff5c5c solid;
+    padding-bottom: 1px; */
+    content: "";
+    position: absolute;
+    background-color: #ffd7d7;
+    inset: 65% 0 0 0;
+    z-index: -1;
+  }
+}
+
 .article-text h2 {
   text-align: center;
   padding: 15px 15px;
@@ -2030,9 +2069,9 @@ img {
 .article-text h2::after {
   content: "";
   position: absolute;
-  left: 29px;
-  bottom: 28%;
-  width: 390px;
+  left: 33px;
+  bottom: 22%;
+  width: 380px;
   height: 12px;
   background-color: #ffd7d7;
   border-radius: 2px;
@@ -2253,7 +2292,7 @@ img {
   content: "";
   position: absolute;
   left: 120px;
-  bottom: 28%;
+  bottom: 22%;
   width: 300px;
   height: 12px;
   background-color: #ffd7d7;
@@ -2264,6 +2303,22 @@ img {
 @media screen and (max-width: 1200px) {
   .method-article-text h2::after {
     display: none;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .method-article-text span {
+    display: inline-block;
+    position: relative;
+  }
+  .method-article-text span::before {
+    /* border-bottom: 2px #ff5c5c solid;
+    padding-bottom: 1px; */
+    content: "";
+    position: absolute;
+    background-color: #ffd7d7;
+    inset: 65% 0 0 0;
+    z-index: -1;
   }
 }
 
@@ -3244,7 +3299,6 @@ img {
 .pages-text-sm a {
   text-decoration: none;
   color: #111111;
-  transition: all 0.2s ease-in-out;
 }
 
 .pages-text-sm i {
@@ -3258,17 +3312,24 @@ img {
   }
 }
 
-.pages-text-sm a:hover {
+.pages-text-sm a > p {
+  transition: all 0.2s ease-in-out;
+}
+
+.pages-text-sm a > p:hover {
   color: #ff5c5c;
 }
 
 .pages-text a {
   text-decoration: none;
   color: #111111;
+}
+
+.pages-text a > p {
   transition: all 0.2s ease-in-out;
 }
 
-.pages-text a:hover {
+.pages-text a > p:hover {
   color: #ff5c5c;
 }
 
