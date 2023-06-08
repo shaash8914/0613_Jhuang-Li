@@ -9,7 +9,7 @@
 }
 
 input {
-  -webkit-appearance: none;
+  appearance: none;
 }
 
 @font-face {
@@ -663,6 +663,18 @@ img {
 
 @media screen and (max-width: 768px) {
   .crystalcard-content {
+    border: 1px solid #565656;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .crystalcard-content {
+    padding: 40px 50px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .crystalcard-content {
     width: 90%;
     border-radius: 60px;
   }
@@ -675,19 +687,39 @@ img {
   margin-bottom: 15px;
   font-size: 24px;
   position: relative;
-  margin-top: 10px;
+}
+
+.cry-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 .text-question {
-  text-align: left;
-  margin-bottom: 30px;
+  display: inline-block;
+  margin-bottom: 25px;
   font-size: 16px;
   border-bottom: 2px solid #ff8383;
   border-radius: 1px;
+  margin-top: 20px;
+}
+
+@media screen and (max-width: 768px) {
+  .text-question {
+    font-size: 16px;
+  }
 }
 
 .text-effect {
-  margin-bottom: 50px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+@media screen and (max-width: 768px) {
+  .text-effect {
+    font-size: 15px;
+  }
 }
 
 .text-effect span {
@@ -695,10 +727,10 @@ img {
 }
 
 .small-text {
+  padding-top: 30px;
   text-align: center;
-  font-size: 14px;
-  color: #565656;
-  padding-bottom: 15px;
+  font-size: 13px;
+  color: #787878;
 }
 
 /* 淨化方法banner */
