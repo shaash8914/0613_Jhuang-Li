@@ -310,8 +310,8 @@ img {
 
   .burger {
     position: relative;
-    width: 30px;
-    height: 20px;
+    width: 20px;
+    height: 15px;
     background: transparent;
     cursor: pointer;
     display: block;
@@ -326,7 +326,7 @@ img {
     position: absolute;
     height: 2px;
     width: 100%;
-    background: #3b3b3b;
+    background: #2d2d2d;
     border-radius: 9px;
     opacity: 1;
     left: 0;
@@ -354,7 +354,7 @@ img {
   .burger input:checked ~ span:nth-of-type(1) {
     transform: rotate(45deg);
     top: 0px;
-    left: 5px;
+    left: 3px;
   }
 
   .burger input:checked ~ span:nth-of-type(2) {
@@ -365,10 +365,37 @@ img {
 
   .burger input:checked ~ span:nth-of-type(3) {
     transform: rotate(-45deg);
-    top: 21px;
-    left: 5px;
+    top: 14px;
+    left: 3px;
   }
 }
+
+.hexagon {
+  width: 45px;
+  position: absolute;
+  z-index: -1;
+}
+
+.hex {
+  display: none;
+  stroke: #2d2d2d;
+  stroke-width: 3px;
+  fill: #ffb1b1;
+}
+
+/* @keyframes dash {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+.hex {
+  stroke: rgb(66, 66, 66);
+  stroke-width: 2px;
+  fill: none;
+  stroke-dasharray: 1000;
+  stroke-dashoffset: 1000;
+  animation: dash 5s linear;
+} */
 
 /* 所有banner區域 */
 
@@ -644,7 +671,7 @@ img {
 }
 
 .crystalcard-content {
-  width: 530px;
+  width: 30rem;
   height: 430px;
   display: flex;
   flex-direction: column;
