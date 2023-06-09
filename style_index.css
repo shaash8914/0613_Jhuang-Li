@@ -475,6 +475,29 @@ img {
 }
 
 @media screen and (max-width: 768px) {
+  .question-banner {
+    background: url(./image/md_fifth_page_banner_1.jpg) center center no-repeat;
+  }
+
+  .commodity-banner {
+    background: url(./image/md_fourth_page_banner_1.jpg) center no-repeat;
+    background-position: 31%;
+  }
+
+  .method-banner {
+    background: url(./image/md_third_page_banner_1.jpg) center center no-repeat;
+  }
+
+  .crystal-banner {
+    background: url(./image/md_second_page_banner_1.jpg) center center no-repeat;
+  }
+
+  .index-banner {
+    background: url(./image/md_front_page_banner_1.jpg) center center no-repeat;
+  }
+}
+
+@media screen and (max-width: 768px) {
   .banner-container {
     border: 3px solid #ffd7d7;
   }
@@ -540,6 +563,7 @@ img {
 @media screen and (max-width: 768px) {
   .crystal-banner-container {
     border: 3px solid #ffd7d7;
+    background: url(./image/md_second_page_banner_1.jpg) center center no-repeat;
   }
 }
 
@@ -773,6 +797,7 @@ img {
 
 @media screen and (max-width: 768px) {
   .method-banner-container {
+    background: url(./image/md_third_page_banner_1.jpg) center center no-repeat;
     border: 3px solid #ffd7d7;
   }
 }
@@ -1078,6 +1103,8 @@ img {
 
 @media screen and (max-width: 768px) {
   .commodity-banner-container {
+    background: url(./image/md_fourth_page_banner_1.jpg) center center no-repeat;
+    background-position: 31%;
     border: 3px solid #ffd7d7;
   }
 }
@@ -1590,6 +1617,7 @@ img {
 
 @media screen and (max-width: 768px) {
   .question-banner-container {
+    background: url(./image/md_fifth_page_banner_1.jpg) center center no-repeat;
     border: 3px solid #ffd7d7;
   }
 }
@@ -2128,9 +2156,9 @@ img {
 .article-text h2::after {
   content: "";
   position: absolute;
-  left: 33px;
+  left: 40px;
   bottom: 22%;
-  width: 380px;
+  width: 370px;
   height: 12px;
   background-color: #ffd7d7;
   border-radius: 2px;
@@ -2350,9 +2378,9 @@ img {
 .method-article-text h2::after {
   content: "";
   position: absolute;
-  left: 120px;
+  left: 128px;
   bottom: 22%;
-  width: 300px;
+  width: 280px;
   height: 12px;
   background-color: #ffd7d7;
   border-radius: 2px;
