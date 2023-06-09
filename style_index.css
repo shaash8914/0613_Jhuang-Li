@@ -684,9 +684,20 @@ img {
 .crystalcard-img {
   position: relative;
   bottom: -30px;
-  background-color: #ffffff;
+  /* background-color: #ffffff; */
   z-index: 5;
   border-radius: 50%;
+}
+
+.crystalcard-img::after {
+  content: "";
+  position: absolute;
+  width: 150px;
+  height: 3px;
+  bottom: 28px;
+  right: 60px;
+  background-color: #ffffff;
+  z-index: 100;
 }
 
 .crystalcard-img img {
