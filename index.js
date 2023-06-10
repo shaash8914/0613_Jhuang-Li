@@ -12,3 +12,4 @@ function scrollToTop() {
 document.getElementById("scrollButton").addEventListener("click", () => {
   document.getElementById("scrollClass").scrollIntoView({ behavior: "smooth" });
 });
+

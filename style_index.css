@@ -305,7 +305,8 @@ img {
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-right: 20px;
+    margin-right: 10px;
+    width: 40px;
   }
 
   .burger {
@@ -824,7 +825,7 @@ img {
 }
 
 .incense-container {
-  width: 1920px;
+  width: 90%;
   max-width: 1200px;
   display: flex;
   align-items: center;
@@ -845,9 +846,14 @@ img {
   border: 1px solid #111111;
   border-radius: 10px;
   position: absolute;
-  top: -30px;
-  left: -70px;
+  top: -40px;
   background-color: #ffffff;
+}
+
+@media screen and (min-width: 1024px) {
+  .incense-title {
+    left: -70px;
+  }
 }
 
 .incense-title h2 {
@@ -867,6 +873,16 @@ img {
   background-color: #ffffff;
 }
 
+@media screen and (max-width: 1024px) {
+  .incense-content {
+    padding: 50px 70px;
+  }
+}
+
+.inc_inner {
+  padding-top: 20px;
+}
+
 .incense-content h3 {
   font-size: 24px;
   font-weight: 400;
@@ -874,8 +890,21 @@ img {
   margin-bottom: 20px;
 }
 
+/* @media screen and (max-width: 768px) {
+  .incense-content h3 {
+    font-size: 21px;
+  }
+} */
+
 .incense-content p {
   text-align: center;
+  font-size: 15px;
+}
+
+@media screen and (max-width: 1024px) {
+  .incense-content p {
+    text-align: left;
+  }
 }
 
 .incense-content p > span {
@@ -888,6 +917,12 @@ img {
   right: -70px;
   border-radius: 50%;
   filter: drop-shadow(0px 8px 8px rgba(0, 0, 0, 0.15));
+}
+
+@media screen and (max-width: 1024px) {
+  .incense-img {
+    display: none;
+  }
 }
 
 .incense-img img {
@@ -904,8 +939,8 @@ img {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding-top: 130px;
   padding-bottom: 130px;
+  padding-top: 100px;
 }
 
 .thr-type-title {
@@ -927,6 +962,7 @@ img {
 }
 
 .sunshine-inner {
+  width: 90%;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -937,9 +973,20 @@ img {
 .sunshine-img {
   position: absolute;
   top: 0;
-  left: 0;
   border-radius: 50%;
   filter: drop-shadow(0px 8px 8px rgba(0, 0, 0, 0.15));
+}
+
+@media screen and (min-width: 1024px) {
+  .sunshine-img {
+    left: 0;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .sunshine-img {
+    top: 5%;
+  }
 }
 
 .sunshine-img img {
@@ -949,8 +996,6 @@ img {
 }
 
 .sunshine-content {
-  width: 750px;
-  height: 300px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -960,6 +1005,26 @@ img {
   margin-top: 200px;
   margin-left: 200px;
   background-color: #ffffff;
+}
+
+@media screen and (max-width: 1024px) {
+  .sunshine-content {
+    margin-left: 0px;
+    margin-top: 400px;
+  }
+}
+
+.sun-detail-inner {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 50px 100px;
+}
+
+@media screen and (max-width: 768px) {
+  .sun-detail-inner {
+    padding: 50px 50px;
+  }
 }
 
 .sunshine-content h3 {
@@ -974,6 +1039,13 @@ img {
   margin-bottom: 20px;
 }
 
+@media screen and (max-width: 768px) {
+  .sunshine-text {
+    font-size: 15px;
+    text-align: left;
+  }
+}
+
 .sunshine-content p > span {
   color: #ff5151;
 }
@@ -981,7 +1053,14 @@ img {
 .sun-small-text {
   text-align: center;
   font-size: 13px;
-  color: #565656;
+  color: #787878;
+}
+
+@media screen and (max-width: 768px) {
+  .sun-small-text {
+    font-size: 12px;
+    text-align: left;
+  }
 }
 
 /* 海鹽浸泡法 */
@@ -995,7 +1074,7 @@ img {
 }
 
 .sea​​salt-container {
-  width: 1920px;
+  width: 100%;
   max-width: 1200px;
   display: flex;
   align-items: center;
@@ -1003,6 +1082,7 @@ img {
 }
 
 .sea​​salt-inner {
+  width: 90%;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -1013,9 +1093,14 @@ img {
 .sea​​salt-img {
   position: absolute;
   top: 0;
-  right: 0;
   border-radius: 50%;
   filter: drop-shadow(0px 8px 8px rgba(0, 0, 0, 0.15));
+}
+
+@media screen and (min-width: 1024px) {
+  .sea​​salt-img {
+    right: 0;
+  }
 }
 
 .sea​​salt-img img {
@@ -1025,8 +1110,6 @@ img {
 }
 
 .sea​​salt-content {
-  width: 750px;
-  height: 300px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -1034,8 +1117,19 @@ img {
   border: 1px solid #111111;
   border-radius: 30px;
   margin-top: 200px;
-  margin-right: 200px;
   background-color: #ffffff;
+}
+
+@media screen and (min-width: 1024px) {
+  .sea​​salt-content {
+    margin-right: 200px;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .sea​​salt-content {
+    margin-top: 370px;
+  }
 }
 
 .sea​​salt-content h3 {
@@ -1047,7 +1141,12 @@ img {
 
 .sea​​salt-text {
   text-align: center;
-  margin-bottom: 20px;
+}
+
+@media screen and (max-width: 768px) {
+  .sea​​salt-text {
+    text-align: left;
+  }
 }
 
 .sea​​salt-content p > span {
@@ -1058,11 +1157,28 @@ img {
   text-align: center;
 }
 
+@media screen and (max-width: 768px) {
+  .sea​​salt-text-detail {
+    text-align: left;
+  }
+}
+
+.salt-detail {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 50px 100px;
+}
+
+@media screen and (max-width: 768px) {
+  .salt-detail {
+    padding: 50px 50px;
+  }
+}
+
 /* 流水法 */
 
 .water-content {
-  width: 750px;
-  height: 300px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -1070,8 +1186,21 @@ img {
   border: 1px solid #111111;
   border-radius: 30px;
   margin-top: 200px;
-  margin-left: 200px;
+
   background-color: #ffffff;
+}
+
+@media screen and (min-width: 1024px) {
+  .water-content {
+    margin-left: 200px;
+    height: 300px;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .water-content {
+    margin-top: 400px;
+  }
 }
 
 .water-content h3 {
@@ -1083,10 +1212,30 @@ img {
 
 .water-text {
   text-align: center;
+  font-size: 15px;
+}
+
+@media screen and (max-width: 768px) {
+  .water-text {
+    text-align: left;
+  }
 }
 
 .water-content p > span {
   color: #ff5151;
+}
+
+.water-detail-inner {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 50px 100px;
+}
+
+@media screen and (max-width: 768px) {
+  .water-detail-inner {
+    padding: 50px 50px;
+  }
 }
 
 /* 水晶淨化法 */
@@ -1098,6 +1247,19 @@ img {
   align-items: center;
   justify-content: center;
   padding-bottom: 200px;
+}
+
+.cry-detail {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 50px 100px;
+}
+
+@media screen and (max-width: 768px) {
+  .cry-detail {
+    padding: 50px 50px;
+  }
 }
 
 /* 所有商品banner */
