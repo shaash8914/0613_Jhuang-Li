@@ -124,12 +124,13 @@
                 <div class="QA-qus">
                   <h3>Q：水晶真的有功效嗎？</h3>
                   <!-- ++按鈕 -->
-                  <div class="btn_ plus" id="slideButton">
+                  <div class="btn_ plus">
                     <label class="container">
                       <input
                         type="checkbox"
                         checked="checked"
-                        class="checkbox"
+                        id="slideButton"
+                        class="checked"
                       />
                       <div class="line"></div>
                       <div class="line line-indicator"></div>
@@ -173,14 +174,18 @@
                   <!-- ++按鈕 -->
                   <div class="btn_ plus">
                     <label class="container">
-                      <input type="checkbox" checked="checked" />
+                      <input
+                        type="checkbox"
+                        checked="checked"
+                        id="slideButton1"
+                      />
                       <div class="line"></div>
                       <div class="line line-indicator"></div>
                     </label>
                   </div>
                 </div>
                 <div class="QA_ans">
-                  <p class="ans">
+                  <p class="ans" id="ans1">
                     還記得在淨化方法提到的流水法嗎？<br />
                     <br />
                     沒錯！水晶是<span id="detail">可以碰水</span
@@ -209,14 +214,18 @@
                   <!-- ++按鈕 -->
                   <div class="btn_ plus">
                     <label class="container">
-                      <input type="checkbox" checked="checked" />
+                      <input
+                        type="checkbox"
+                        checked="checked"
+                        id="slideButton2"
+                      />
                       <div class="line"></div>
                       <div class="line line-indicator"></div>
                     </label>
                   </div>
                 </div>
                 <div class="QA_ans">
-                  <p class="ans">
+                  <p class="ans" id="ans2">
                     這題可以說是每個人都會有的疑問~<br />
                     「我手上戴了粉晶，還可以戴黃水晶嗎？」<br />
                     <br />
@@ -244,14 +253,18 @@
                   <!-- ++按鈕 -->
                   <div class="btn_ plus">
                     <label class="container">
-                      <input type="checkbox" checked="checked" />
+                      <input
+                        type="checkbox"
+                        checked="checked"
+                        id="slideButton3"
+                      />
                       <div class="line"></div>
                       <div class="line line-indicator"></div>
                     </label>
                   </div>
                 </div>
                 <div class="QA_ans">
-                  <p class="ans">
+                  <p class="ans" id="ans3">
                     除了黑色／茶色等，主要功效用於辟邪、去病氣、擋小人的水晶應配戴於右手外，<br />
                     一般的水晶都應戴於<span id="detail">左手</span
                     >以發揮它最大的效果！<br />
@@ -275,14 +288,18 @@
                   <!-- ++按鈕 -->
                   <div class="btn_ plus">
                     <label class="container">
-                      <input type="checkbox" checked="checked" />
+                      <input
+                        type="checkbox"
+                        checked="checked"
+                        id="slideButton4"
+                      />
                       <div class="line"></div>
                       <div class="line line-indicator"></div>
                     </label>
                   </div>
                 </div>
                 <div class="QA_ans">
-                  <p class="ans">
+                  <p class="ans" id="ans4">
                     可以的！<br />
                     <br />
                     有些人會告訴你「水晶別跟手錶一起戴」，我不是說這是錯的，但是我覺得不用這麼硬性規定。<br />
@@ -307,14 +324,18 @@
                   <!-- ++按鈕 -->
                   <div class="btn_ plus">
                     <label class="container">
-                      <input type="checkbox" checked="checked" />
+                      <input
+                        type="checkbox"
+                        checked="checked"
+                        id="slideButton5"
+                      />
                       <div class="line"></div>
                       <div class="line line-indicator"></div>
                     </label>
                   </div>
                 </div>
                 <div class="QA_ans">
-                  <p class="ans">
+                  <p class="ans" id="ans5">
                     其實這個問題並沒有標準答案，而是需要依照水晶的特質及個人體質來回答。<br />
                     <br />
                     每個人對於水晶的能量反應都不一樣，需要花時間去磨合。<br />
@@ -339,14 +360,18 @@
                   <!-- ++按鈕 -->
                   <div class="btn_ plus">
                     <label class="container">
-                      <input type="checkbox" checked="checked" />
+                      <input
+                        type="checkbox"
+                        checked="checked"
+                        id="slideButton6"
+                      />
                       <div class="line"></div>
                       <div class="line line-indicator"></div>
                     </label>
                   </div>
                 </div>
                 <div class="QA_ans">
-                  <p class="ans">
+                  <p class="ans" id="ans6">
                     如果身邊有軟尺，可以用軟尺圍繞「手腕最瘦」的地方一圈，<br />
                     得到的長度就是手圍，剛好適合就可，軟尺不用拉到最緊。<br />
                     <br />
@@ -448,8 +473,36 @@
   ></script>
   <script src="./index.js"></script>
   <script src="./aos/aos.js"></script>
+  <script src="./js/jquery-3.7.0.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.13.2/jquery-ui.min.js"></script>
   <!-- 淡入動畫 -->
   <script>
     AOS.init();
+  </script>
+  <!-- 手風琴效果 -->
+  <script>
+    $(function () {
+      $("#slideButton").click(function () {
+        $(".ans").slideToggle(600);
+      });
+      $("#slideButton1").click(function () {
+        $("#ans1").slideToggle(600);
+      });
+      $("#slideButton2").click(function () {
+        $("#ans2").slideToggle(600);
+      });
+      $("#slideButton3").click(function () {
+        $("#ans3").slideToggle(600);
+      });
+      $("#slideButton4").click(function () {
+        $("#ans4").slideToggle(600);
+      });
+      $("#slideButton5").click(function () {
+        $("#ans5").slideToggle(600);
+      });
+      $("#slideButton6").click(function () {
+        $("#ans6").slideToggle(600);
+      });
+    });
   </script>
 </html>
