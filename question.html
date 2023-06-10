@@ -137,8 +137,8 @@
                     </label>
                   </div>
                 </div>
-                <div class="QA_ans" id="ans">
-                  <p class="ans">
+                <div class="QA_ans">
+                  <p class="ans" id="ans">
                     以下是廣大水晶愛好者的兩大派系，假設你對於水晶功效仍有存疑，<br />
                     可以參考大家的體驗來選擇如何應用水晶！<br />
                     <br />
@@ -483,7 +483,7 @@
   <script>
     $(function () {
       $("#slideButton").click(function () {
-        $(".ans").slideToggle(600);
+        $("#ans").slideToggle(600);
       });
       $("#slideButton1").click(function () {
         $("#ans1").slideToggle(600);
