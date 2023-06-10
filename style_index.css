@@ -14,7 +14,7 @@ input {
 
 @font-face {
   font-family: "myfont";
-  src: url(./Font/GenJyuuGothic-Regular.ttf);
+  src: url(./Font/GenJyuuGothic-Regular.woff2);
 }
 
 img {
