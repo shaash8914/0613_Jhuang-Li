@@ -618,7 +618,7 @@ img {
   display: flex;
   align-items: center;
   justify-content: center;
-  padding-top: 50px;
+  padding-top: 120px;
 }
 
 .pb-wrap-crystal {
@@ -689,12 +689,11 @@ img {
   border-radius: 50%;
 }
 
-.crystalcard-img::after {
-  content: "";
+.mask {
   position: absolute;
   width: 150px;
-  height: 3px;
-  bottom: 28px;
+  height: 50px;
+  bottom: -5px;
   right: 60px;
   background-color: #ffffff;
   z-index: 100;
