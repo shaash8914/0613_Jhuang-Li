@@ -920,7 +920,7 @@ img {
 }
 
 .sunshine-container {
-  width: 1920px;
+  width: 100%;
   max-width: 1200px;
   display: flex;
   align-items: center;
@@ -2580,7 +2580,7 @@ img {
 }
 
 .news-container {
-  width: 1920px;
+  width: 80%;
   max-width: 1200px;
   margin-top: 70px;
   margin-bottom: 70px;
@@ -2608,14 +2608,32 @@ img {
   z-index: 1;
 }
 
+@media screen and (max-width: 1200px) {
+  .news-body {
+    margin-left: 0px;
+  }
+}
+
 .news-detail {
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   justify-content: center;
 }
 
+@media screen and (max-width: 768px) {
+  .news-detail {
+    flex-wrap: wrap;
+    justify-content: flex-start;
+  }
+  xt-content .n-detail {
+    padding-top: 30px;
+  }
+}
+
 .text-content {
-  padding: 20px 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 20px;
   display: flex;
   margin-bottom: 20px;
   cursor: pointer;
@@ -2668,18 +2686,25 @@ img {
   padding-top: 6px;
   color: #ffffff;
   background-color: #ff8989;
-  margin: 0 30px;
   border-radius: 2px 10px 2px 10px;
   transition: all 0.25s ease-in-out;
 }
 
 .fa-solid.fa-circle-arrow-right {
-  padding: 5px 5px;
-  margin: 0 30px;
+  padding-left: 15px;
+  padding-right: 5px;
+  padding-bottom: 5px;
+  /* margin-left: 30px; */
   font-size: 20px;
   color: #111111;
   cursor: pointer;
   transition: all 0.25s ease-in-out;
+}
+
+@media screen and (max-width: 768px) {
+  .fa-solid.fa-circle-arrow-right {
+    padding-left: 5px;
+  }
 }
 
 .text-content:hover .fa-solid.fa-circle-arrow-right {
@@ -2689,6 +2714,35 @@ img {
 
 .text-content:hover p {
   color: #ff5c5c;
+}
+
+@media screen and (max-width: 768px) {
+  .arrow-news i {
+    position: relative;
+  }
+}
+
+.time-detail {
+  padding-right: 30px;
+  padding-bottom: 30px;
+}
+
+@media screen and (max-width: 768px) {
+  .time-detail {
+    padding-bottom: 10px;
+  }
+}
+
+.n-detail {
+  padding-left: 30px;
+}
+
+@media screen and (max-width: 768px) {
+  .n-detail {
+    padding-left: 0px;
+    padding-bottom: 20px;
+    padding-top: 10px;
+  }
 }
 
 /* 閱讀更多箭頭 */
@@ -2765,6 +2819,12 @@ img {
     25% 22%
   );
   transition: all 0.5s ease-in-out;
+}
+
+@media screen and (max-width: 1200px) {
+  .news-img {
+    display: none;
+  }
 }
 
 .news-img img {
