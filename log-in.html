@@ -16,23 +16,33 @@
       href="./image/favicon.ico"
     />
     <link rel="stylesheet" href="./style_index.css" />
+    <link href="./aos/aos.css" rel="stylesheet" />
   </head>
   <body>
     <!-- 背景圖 -->
-    <div class="background-pic_index"></div>
+    <div
+      class="background-pic_index"
+      data-aos="fade-up"
+      data-aos-duration="500"
+    ></div>
     <!-- 購物車 -->
-    <div class="wrap-shopcart">
+    <div class="wrap-shopcart" data-aos="fade-up">
       <img src="./image/shoppcar_icon.svg" alt="shopping-cart" />
     </div>
     <!-- 導覽列 -->
     <header class="wrap-header-log">
       <nav class="header-container">
-        <div class="nav-logo">
+        <div class="nav-logo" data-aos="fade-up" data-aos-duration="800">
           <a class="logo-link" href="./index.html">
             <img src="./image/title_logo.svg" alt="Rose Quartz_logo" />
           </a>
         </div>
-        <div class="list-inner">
+        <div
+          class="list-inner"
+          data-aos="fade-up"
+          data-aos-duration="800"
+          data-aos-delay="100"
+        >
           <ul class="nav-list">
             <li>
               <div class="list-hover"></div>
@@ -65,9 +75,21 @@
         <div class="log-in_container">
           <div class="log-in_inner">
             <div class="log-in_title">
-              <h2>會員登入</h2>
+              <h2
+                data-aos="fade-up"
+                data-aos-duration="800"
+                data-aos-once="true"
+              >
+                會員登入
+              </h2>
             </div>
-            <div class="log-in_body">
+            <div
+              class="log-in_body"
+              data-aos="fade-up"
+              data-aos-duration="800"
+              data-aos-delay="100"
+              data-aos-once="true"
+            >
               <!-- 登入表單 -->
               <form action="" method="post" name="log-in">
                 <div class="email-inner">
@@ -123,7 +145,12 @@
     <!-- 頁尾 -->
     <footer class="wrap-footer">
       <!-- 尾頁top -->
-      <div class="page-scroll-inner">
+      <div
+        class="page-scroll-inner"
+        data-aos="fade-up"
+        data-aos-duration="800"
+        data-aos-once="true"
+      >
         <span class="page-scroll" onclick="scrollToTop()">Top</span>
       </div>
       <!-- 尾頁內容 -->
@@ -189,4 +216,9 @@
     crossorigin="anonymous"
   ></script>
   <script type="text/javascript" src="./index.js"></script>
+  <script src="./aos/aos.js"></script>
+  <!-- 淡入動畫 -->
+  <script>
+    AOS.init();
+  </script>
 </html>
