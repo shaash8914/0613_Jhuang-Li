@@ -16,16 +16,6 @@ input {
   font-family: "myfont";
   src: url(./Font/GenJyuuGothic-Regular.woff2);
 }
-/* 
-@font-face {
-  font-family: "微軟正黑體";
-  font-style: normal;
-  font-weight: 400;
-  src: local("微軟正黑體"), local("微軟正黑體"),
-    url(https://fonts.gstatic.com/s/pacifico/v12/FwZY7-Qmy14u9lezJ-6H6MmBp0u-.woff2)
-      format("woff2");
-  font-display: swap;
-} */
 
 img {
   image-rendering: -webkit-optimize-contrast;
@@ -2152,6 +2142,8 @@ img {
   }
 }
 
+/* 手機/桌機版搜尋框 */
+
 .search-inner {
   position: absolute;
   top: 10%;
@@ -2168,10 +2160,6 @@ img {
   z-index: 100;
   transition: all 0.2s ease-in-out;
   z-index: 100;
-}
-
-.search::-webkit-search-cancel-button {
-  display: none;
 }
 
 .search:focus {
@@ -2192,9 +2180,72 @@ img {
   z-index: 2;
 }
 
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 768px) {
+  .search-checkbox {
+    position: absolute;
+    width: 60px;
+    height: 50px;
+    top: 10%;
+    right: -5%;
+    z-index: 1000;
+    background-color: #ffffff;
+    border: 1px solid #111111;
+    opacity: 0;
+  }
+
+  .search-checkbox:checked {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    top: 10%;
+    right: 52%;
+    z-index: 1000;
+    background-color: #ffffff;
+    border: 1px solid #111111;
+  }
+
+  .search-checkbox:checked ~ .search-inner {
+    position: absolute;
+    top: 10%;
+    right: -10%;
+    z-index: 100;
+  }
+
   .search-inner {
-    display: none;
+    position: absolute;
+    top: 10%;
+    right: -65%;
+    z-index: 100;
+    transition: all 1s cubic-bezier(0.68, -0.6, 0.32, 1.6);
+  }
+
+  .search {
+    outline: none;
+    border-style: none;
+    background-color: #ffffff;
+    border-radius: 10px;
+    padding: 13px 60px;
+    z-index: 100;
+    transition: all 0.2s ease-in-out;
+    z-index: 100;
+  }
+
+  .search:focus {
+    opacity: 80%;
+  }
+
+  .search::placeholder {
+    color: #828282;
+    font-weight: 200;
+    font-size: 10px;
+  }
+
+  .search-inner i {
+    font-size: 20px;
+    position: absolute;
+    left: 4%;
+    top: 27%;
+    z-index: 2;
   }
 }
 
