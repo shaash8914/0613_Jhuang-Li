@@ -6,7 +6,6 @@
   letter-spacing: 2.4px;
   color: #2d2d2d;
   /* cursor: url("./image/cursor.svg") 10 5, move; */
-  -webkit-overflow-scrolling: touch;
 }
 
 input {
@@ -58,6 +57,7 @@ img {
   background-size: cover;
   background-repeat: no-repeat;
   filter: blur(0.5px);
+  -webkit-transform: translateZ(0);
 }
 
 /* 購物車 */
