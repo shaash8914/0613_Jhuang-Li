@@ -2,7 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "myfont", sans-serif;
+  font-family: "myfont", "微軟正黑體";
   letter-spacing: 2.4px;
   color: #2d2d2d;
   /* cursor: url("./image/cursor.svg") 10 5, move; */
@@ -16,6 +16,16 @@ input {
   font-family: "myfont";
   src: url(./Font/GenJyuuGothic-Regular.woff2);
 }
+/* 
+@font-face {
+  font-family: "微軟正黑體";
+  font-style: normal;
+  font-weight: 400;
+  src: local("微軟正黑體"), local("微軟正黑體"),
+    url(https://fonts.gstatic.com/s/pacifico/v12/FwZY7-Qmy14u9lezJ-6H6MmBp0u-.woff2)
+      format("woff2");
+  font-display: swap;
+} */
 
 img {
   image-rendering: -webkit-optimize-contrast;
