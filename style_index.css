@@ -1014,7 +1014,7 @@ img {
   border-radius: 50%;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 450px) {
   .sunshine-img {
     width: 80%;
   }
@@ -1114,6 +1114,7 @@ img {
   justify-content: center;
   position: relative;
   z-index: 1;
+  height: 80%;
 }
 
 .sea​​salt-img {
@@ -1143,7 +1144,7 @@ img {
   border-radius: 50%;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 450px) {
   .sea​​salt-img {
     width: 80%;
   }
@@ -3570,7 +3571,6 @@ img {
   align-items: center;
   justify-content: center;
   gap: 10px;
-  padding-right: 10px;
 }
 
 @media screen and (max-width: 768px) {
