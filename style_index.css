@@ -2215,6 +2215,7 @@ img {
     top: 14%;
     right: -10%;
     z-index: 100;
+    transition: all 1s cubic-bezier(0.68, -0.6, 0.32, 1.6);
   }
 
   .search-inner {
@@ -2222,7 +2223,6 @@ img {
     top: 14%;
     right: -57%;
     z-index: 100;
-    transition: all 1s cubic-bezier(0.68, -0.6, 0.32, 1.6);
     overflow: hidden;
   }
 
@@ -2232,8 +2232,6 @@ img {
     background-color: #ffffff;
     border-radius: 10px;
     padding: 13px 60px;
-    z-index: 100;
-    transition: all 0.2s ease-in-out;
     z-index: 100;
   }
 
