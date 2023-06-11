@@ -1015,7 +1015,8 @@ img {
 
 @media screen and (max-width: 768px) {
   .sunshine-img img {
-    height: 280px;
+    width: 278px;
+    height: 265px;
   }
 }
 
@@ -1143,7 +1144,8 @@ img {
 
 @media screen and (max-width: 768px) {
   .sea​​salt-img img {
-    height: 280px;
+    width: 278px;
+    height: 265px;
   }
 }
 
