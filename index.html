@@ -30,6 +30,48 @@
     <div class="wrap-shopcart" data-aos="fade-up">
       <img src="./image/ip_shoppcar_icon.svg" alt="shopping-cart" />
     </div>
+    <!-- 手機版選單 -->
+    <div
+      class="md_list-inner"
+      id="md_list-inner"
+      data-aos="fade-up"
+      data-aos-duration="800"
+    >
+      <div class="md-inner">
+        <ul class="md_nav-list">
+          <li>
+            <a href="./crystal.html">認識水晶</a>
+          </li>
+          <li>
+            <a href="./method.html">淨化方法</a>
+          </li>
+          <li>
+            <a href="./commodity.html">所有商品</a>
+          </li>
+          <li>
+            <a href="./question.html">常見問題</a>
+          </li>
+        </ul>
+        <div class="md_nav-btn">
+          <a href="./log-in.html" class="md_btn_log-in">登 入</a>
+          <a href="./sign-up.html" class="md_btn_sign-up">註 冊</a>
+        </div>
+      </div>
+    </div>
+    <!-- 手機板漢堡 -->
+    <div class="burger-inner">
+      <label
+        class="burger"
+        for="burger"
+        data-aos="fade-up"
+        data-aos-duration="800"
+      >
+        <input type="checkbox" id="burger" />
+        <span></span>
+        <span></span>
+        <span></span>
+      </label>
+    </div>
     <!-- 導覽列 -->
     <header class="wrap-header">
       <nav class="header-container">
@@ -63,36 +105,10 @@
             <a href="./sign-up.html" class="btn_sign-up">註 冊</a>
           </div>
         </div>
-        <!-- 手機板漢堡 -->
-        <div class="burger-inner" data-aos="fade-up" data-aos-duration="800">
-          <label class="burger" for="burger">
-            <input type="checkbox" id="burger" />
-            <span></span>
-            <span></span>
-            <span></span>
-          </label>
-          <svg class="hexagon" viewBox="0 0 112 112">
-            <polygon
-              class="hex"
-              points="101.9,82.5 101.9,29.5 56,3 10.1,29.5 10.1,82.5 56,109 "
-            />
-          </svg>
-        </div>
       </nav>
     </header>
     <!-- 首頁_主要區塊 -->
     <main class="wrap-main_index">
-      <div class="search-container">
-        <input type="checkbox" class="search-checkbox" />
-        <div class="search-inner">
-          <input
-            class="search"
-            type="search"
-            placeholder="挑選屬於你自己的水晶！"
-          />
-          <i class="fa-solid fa-magnifying-glass" style="color: #ffa3a3"></i>
-        </div>
-      </div>
       <!-- 首頁banner -->
       <section class="wrap-banner" data-aos="fade-up" data-aos-duration="800">
         <div class="swiper indexSwiper">
@@ -120,6 +136,20 @@
               data-aos-duration="800"
             >
               <span class="scroll">Scroll</span>
+            </div>
+            <div class="search-container">
+              <input type="checkbox" class="search-checkbox" />
+              <div class="search-inner">
+                <input
+                  class="search"
+                  type="search"
+                  placeholder="挑選屬於你自己的水晶！"
+                />
+                <i
+                  class="fa-solid fa-magnifying-glass"
+                  style="color: #ffa3a3"
+                ></i>
+              </div>
             </div>
           </div>
         </div>
@@ -574,6 +604,8 @@
     src="https://kit.fontawesome.com/5c9cec6bc6.js"
     crossorigin="anonymous"
   ></script>
+  <script src="./js/jquery-3.7.0.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.13.2/jquery-ui.min.js"></script>
   <!-- 淡入動畫 -->
   <script>
     AOS.init();
@@ -648,5 +680,13 @@
           '<div class="swiper-slide">Slide ' + ++appendNumber + "</div>",
         ]);
       });
+  </script>
+  <!-- 手機版選單 -->
+  <script>
+    $(function () {
+      $("#burger").click(function () {
+        $("#md_list-inner").slideToggle(800);
+      });
+    });
   </script>
 </html>

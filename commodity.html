@@ -29,6 +29,48 @@
     <div class="wrap-shopcart" data-aos="fade-up">
       <img src="./image/shoppcar_icon.svg" alt="shopping-cart" />
     </div>
+    <!-- 手機版選單 -->
+    <div
+      class="md_list-inner"
+      id="md_list-inner"
+      data-aos="fade-up"
+      data-aos-duration="800"
+    >
+      <div class="md-inner">
+        <ul class="md_nav-list">
+          <li>
+            <a href="./crystal.html">認識水晶</a>
+          </li>
+          <li>
+            <a href="./method.html">淨化方法</a>
+          </li>
+          <li>
+            <a href="./commodity.html">所有商品</a>
+          </li>
+          <li>
+            <a href="./question.html">常見問題</a>
+          </li>
+        </ul>
+        <div class="md_nav-btn">
+          <a href="./log-in.html" class="md_btn_log-in">登 入</a>
+          <a href="./sign-up.html" class="md_btn_sign-up">註 冊</a>
+        </div>
+      </div>
+    </div>
+    <!-- 手機板漢堡 -->
+    <div class="burger-inner">
+      <label
+        class="burger"
+        for="burger"
+        data-aos="fade-up"
+        data-aos-duration="800"
+      >
+        <input type="checkbox" id="burger" />
+        <span></span>
+        <span></span>
+        <span></span>
+      </label>
+    </div>
     <!-- 導覽列 -->
     <header class="wrap-header">
       <nav class="header-container">
@@ -466,8 +508,18 @@
   ></script>
   <script type="text/javascript" src="./index.js"></script>
   <script src="./aos/aos.js"></script>
+  <script src="./js/jquery-3.7.0.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.13.2/jquery-ui.min.js"></script>
   <!-- 淡入動畫 -->
   <script>
     AOS.init();
+  </script>
+  <!-- 手機版選單 -->
+  <script>
+    $(function () {
+      $("#burger").click(function () {
+        $("#md_list-inner").slideToggle(800, "easeInOutQuad");
+      });
+    });
   </script>
 </html>
