@@ -864,7 +864,7 @@ img {
 }
 
 .incense-title h2 {
-  font-size: 24px;
+  font-size: 20px;
   font-weight: 400;
   text-align: center;
 }
@@ -892,10 +892,10 @@ img {
 }
 
 .incense-content h3 {
-  font-size: 24px;
+  font-size: 22px;
   font-weight: 400;
   text-align: center;
-  margin-bottom: 20px;
+  margin-bottom: 30px;
 }
 
 /* @media screen and (max-width: 768px) {
@@ -1053,10 +1053,10 @@ img {
 }
 
 .sunshine-content h3 {
-  font-size: 24px;
+  font-size: 22px;
   font-weight: 400;
   text-align: center;
-  margin-bottom: 20px;
+  margin-bottom: 30px;
 }
 
 .sunshine-text {
@@ -1171,10 +1171,10 @@ img {
 }
 
 .sea​​salt-content h3 {
-  font-size: 24px;
+  font-size: 22px;
   font-weight: 400;
   text-align: center;
-  margin-bottom: 20px;
+  margin-bottom: 30px;
 }
 
 .sea​​salt-text {
@@ -1243,10 +1243,10 @@ img {
 }
 
 .water-content h3 {
-  font-size: 24px;
+  font-size: 22px;
   font-weight: 400;
   text-align: center;
-  margin-bottom: 20px;
+  margin-bottom: 30px;
 }
 
 .water-text {
