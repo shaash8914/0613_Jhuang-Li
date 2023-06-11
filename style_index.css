@@ -2204,14 +2204,13 @@ img {
     width: 50px;
     height: 50px;
     top: 14%;
-    right: 47%;
+    right: 49%;
     z-index: 1000;
     background-color: #ffffff;
     border: 1px solid #111111;
   }
 
   .search-checkbox:checked ~ .search-inner {
-    position: absolute;
     top: 14%;
     right: -10%;
     z-index: 100;
@@ -2219,49 +2218,29 @@ img {
   }
 
   .search-inner {
-    position: absolute;
     top: 14%;
     right: -57%;
     z-index: 100;
-    overflow: hidden;
     transition: all 1s cubic-bezier(0.68, -0.6, 0.32, 1.6);
   }
 
   .search {
-    outline: none;
-    border-style: none;
-    background-color: #ffffff;
-    border-radius: 10px;
     padding: 13px 60px;
-    z-index: 100;
-  }
-
-  .search:focus {
-    opacity: 80%;
   }
 
   .search::placeholder {
     color: #ffffff00;
-    font-weight: 200;
-    font-size: 10px;
     display: none;
-  }
-
-  .search-inner i {
-    font-size: 20px;
-    position: absolute;
-    left: 4%;
-    top: 27%;
-    z-index: 2;
   }
 
   .search-container {
     overflow: hidden;
-    position: absolute;
+    position: fixed;
     width: 380px;
     height: 60px;
     top: 15%;
     right: 0.4%;
+    z-index: 1000;
   }
 }
 
