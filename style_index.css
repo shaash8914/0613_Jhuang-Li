@@ -57,7 +57,6 @@ img {
   background-size: cover;
   background-repeat: no-repeat;
   filter: blur(0.5px);
-  -webkit-transform: translateZ(0);
 }
 
 /* 購物車 */
@@ -1518,6 +1517,19 @@ img {
   }
 }
 
+/* .kind-text {
+  color: #818181;
+} */
+
+.fa-solid .fa-angle-down {
+  width: 18px;
+  height: 18px;
+  background-color: #111111;
+  border-radius: 50%;
+  margin: 5px 5px;
+  transition: all 0.25s ease-in-out;
+}
+
 .pink-kind-icon {
   width: 18px;
   height: 18px;
@@ -1633,14 +1645,19 @@ img {
   justify-content: center;
   margin-left: 10px;
   text-decoration: none;
-  color: #111111;
+  color: #dadada;
   transition: all 0.25s ease-in-out;
+  cursor: pointer;
 }
 
 .kind-inner:hover {
-  background-color: #fffffff0;
+  /* background-color: #fffffff0;
   box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.15);
-  border-radius: 4px;
+  border-radius: 4px; */
+}
+
+#active_kind {
+  border-bottom: 2px solid #111111;
 }
 
 .kind-inner h3 {
