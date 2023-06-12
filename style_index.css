@@ -1477,17 +1477,6 @@ img {
   justify-content: center;
 }
 
-.commodity-inner {
-  /* width: 100%;
-  max-width: 1100px;
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
-  flex-wrap: wrap;
-  gap: 20px;
-  margin-bottom: 80px; */
-}
-
 /* 水晶分類 */
 
 .classifiaction {
@@ -1658,11 +1647,10 @@ img {
   cursor: pointer;
 }
 
-.kind-inner:hover {
+/* .kind-inner:hover {
   /* background-color: #fffffff0;
   box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px; */
-}
 
 .active_kind {
   border-bottom: 2px solid #ff5c5c;
