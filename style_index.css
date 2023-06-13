@@ -1482,18 +1482,11 @@ img {
 .classifiaction {
   width: 100%;
   max-width: 1200px;
-  /* display: flex;
+  display: flex;
   align-items: center;
-  justify-content: space-between; */
+  justify-content: center;
   margin-bottom: 80px;
   padding: 15px 15px;
-  border-bottom: 1px solid #111111;
-}
-
-@media screen and (max-width: 768px) {
-  .classifiaction {
-    width: 90%;
-  }
 }
 
 .type_flex {
@@ -1503,6 +1496,7 @@ img {
 }
 
 .class-type {
+  margin-left: 0;
   font-size: 24px;
   font-weight: 400;
   text-align: center;
@@ -1516,22 +1510,33 @@ img {
 
 @media screen and (max-width: 768px) {
   .kind-inner-container {
-    /* display: none; */
-    /* display: flex;
-    flex-wrap: wrap; */
+    overflow: auto;
+    width: 100%;
+    margin-left: auto;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: flex-end;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    gap: 5px;
   }
 }
 
 .type_flex_detail {
+  width: 95%;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  justify-content: space-between;
+  justify-content: flex-start;
+  border-bottom: 1px solid #111111;
+  padding-bottom: 10px;
 }
 
-/* .kind-text {
-  color: #818181;
-} */
+.k_inner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 
 .fa-solid .fa-angle-down {
   width: 18px;
@@ -1654,25 +1659,28 @@ img {
 .kind-inner {
   display: flex;
   align-items: center;
-  justify-content: center;
-  margin-left: 10px;
+  justify-content: flex-end;
   text-decoration: none;
   color: #dadada;
   transition: all 0.25s ease-in-out;
   cursor: pointer;
 }
 
-/* .kind-inner:hover {
-  /* background-color: #fffffff0;
-  box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.15);
-  border-radius: 4px; */
+@media screen and (max-width: 768px) {
+  #kind {
+    justify-content: center;
+    margin: 10px 0;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .kind-inner {
+    margin-left: 10px;
+  }
+}
 
 .active_kind {
   border-bottom: 2px solid #ff5c5c;
-}
-
-.active {
-  color: #ff5c5c;
 }
 
 .kind-inner h3 {
