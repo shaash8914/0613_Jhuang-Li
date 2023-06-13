@@ -3,7 +3,7 @@
   padding: 0;
   box-sizing: border-box;
   font-family: "myfont", "微軟正黑體";
-  letter-spacing: 2.4px;
+  letter-spacing: 2px;
   color: #2d2d2d;
   /* cursor: url("./image/cursor.svg") 10 5, move; */
 }
@@ -301,6 +301,39 @@ img {
 /* 手機板選單 */
 
 @media screen and (max-width: 1200px) {
+  .md_image {
+    width: 100%;
+    height: 100%;
+  }
+
+  .md_image img {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: -220px;
+    left: -140px;
+    transform: rotate(-10deg);
+    z-index: -1;
+    opacity: 0.8;
+  }
+
+  .md_image_down {
+    width: 100%;
+    height: 100%;
+  }
+
+  .md_image_down img {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    bottom: -250px;
+    right: -200px;
+    transform: rotate(10deg);
+    z-index: -1;
+    opacity: 0.8;
+    filter: blur(0.5);
+  }
+
   .nav-list {
     display: flex;
     align-items: center;
@@ -333,6 +366,7 @@ img {
     width: 90%;
     margin: auto;
     padding-top: 60px;
+    position: relative;
   }
 
   .md_nav-list {
@@ -347,16 +381,18 @@ img {
     display: flex;
     align-items: center;
     justify-content: center;
+    position: relative;
   }
 
   .md_nav-list li > a {
     display: block;
-    color: #000000;
+    color: #2d2d2d;
     text-decoration: none;
     text-align: center;
     position: relative;
     z-index: 2;
     transition: all 0.25s ease-in-out;
+    padding: 20px 60px;
   }
 
   /* .md_nav-list li > a::before {
@@ -376,7 +412,6 @@ img {
   }
 
   .md_nav-list li {
-    padding: 20px 0;
     border-bottom: 1px solid #cfcfcf;
   }
 
@@ -410,7 +445,7 @@ img {
     background: #ff5c5c;
     box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.15);
     font-size: 16px;
-    margin-left: 30px;
+    margin-left: 20px;
     transition: all 0.25s ease-in-out;
   }
 
@@ -3641,7 +3676,7 @@ img {
 
 @media screen and (max-width: 768px) {
   .log-in_container {
-    background-color: rgb(255 255 255 / 95%);
+    background-color: rgb(255 255 255 / 60%);
     box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.15);
     border-radius: 10px;
   }
